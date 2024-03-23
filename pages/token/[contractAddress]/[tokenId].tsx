@@ -207,8 +207,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const sdk = new ThirdwebSDK("mumbai");
   
     const contract = await sdk.getContract(NFT_COLLECTION_ADDRESS);
+
+    const nft = await contract.erc721.get(tokenId) as NFTMetadata;
   
-    const nft = await contract.erc721.get(tokenId);
+   /* const nft = await contract.erc721.get(tokenId); */
   
     let contractMetadata;
   
