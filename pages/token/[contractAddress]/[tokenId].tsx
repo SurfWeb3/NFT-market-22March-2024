@@ -1,6 +1,6 @@
 import { Avatar, Box, Container, Flex, Input, SimpleGrid, Skeleton, Stack, Text } from "@chakra-ui/react";
 import { MediaRenderer, ThirdwebNftMedia, Web3Button, useContract, useMinimumNextBid, useValidDirectListings, useValidEnglishAuctions } from "@thirdweb-dev/react";
-import { NFT, ThirdwebSDK } from "@thirdweb-dev/sdk";
+import { NFT, ThirdwebSDK, NFTMetadata } from "@thirdweb-dev/sdk";
 import React, { useState } from "react";
 import { 
     MARKETPLACE_ADDRESS,
